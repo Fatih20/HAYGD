@@ -1,0 +1,29 @@
+body {
+    background: #c6262e;
+    color: white;
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #fafafa	;
+    font-family: 'Pangolin', cursive;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-align: center;
+    
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+}
+
+@media (max-width: 670px) {
+    h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+}
