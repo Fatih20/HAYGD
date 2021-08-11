@@ -1,8 +1,13 @@
 body {
     background: #c6262e;
     color: white;
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
 }
 
 h1 {

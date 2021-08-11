@@ -6,56 +6,58 @@
         <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
 		<title>How are you gonna die?</title>
-        <script>
-            var opening_phrase = "You are going to ";
-            var death_list = [
-            {
-                "death_method" : "drown",
-                "connector" : "in",
-                "second_descriptor":
-                [
-                    "lake Toba",
-                    "the Pacific Ocean",
-                    "a sinking ship",
-                    "a tub of radioactive waste",
-                ]
-            }, 
-            {
-                "death_method": "be killed",
-                "connector": "by",
-                "second_descriptor":
-                [
-                    "a serial killer",
-                    "your significant other",
-                    "that person you ghosted 2 months ago",
-                ]
-
-            }, 
-            {
-                "death_method": "be hit",
-                "connector": "by",
-                "second_descriptor":
-                [
-                    "a speeding car",
-                    "a truck",
-                    "a shinkanshen",
-                    "a plane that is going to take off",
-                    "an ICBM"
-
-                ]
-            }
-            ];
-            var death_index = Math.floor(Math.random()*death_list.length);
-            var death = death_list[death_index];
-            var pp_index = Math.floor(Math.random()*death["second_descriptor"].length);
-
-            document.write("<h1>"+opening_phrase + death["death_method"]+ " " + death["connector"] + " " + death["second_descriptor"][pp_index]+"</h1>");
-        </script>
 
 
 	</head>
  	
 	<body>
+        <container>
+            <script>
+                var opening_phrase = "You are going to ";
+                var death_list = [
+                {
+                    "death_method" : "drown",
+                    "connector" : "in",
+                    "second_descriptor":
+                    [
+                        "lake Toba",
+                        "the Pacific Ocean",
+                        "a sinking ship",
+                        "a tub of radioactive waste",
+                    ]
+                }, 
+                {
+                    "death_method": "be killed",
+                    "connector": "by",
+                    "second_descriptor":
+                    [
+                        "a serial killer",
+                        "your significant other",
+                        "that person you ghosted 2 months ago",
+                    ]
+    
+                }, 
+                {
+                    "death_method": "be hit",
+                    "connector": "by",
+                    "second_descriptor":
+                    [
+                        "a speeding car",
+                        "a truck",
+                        "a shinkanshen",
+                        "a plane that is going to take off",
+                        "an ICBM"
+    
+                    ]
+                }
+                ];
+                var death_index = Math.floor(Math.random()*death_list.length);
+                var death = death_list[death_index];
+                var pp_index = Math.floor(Math.random()*death["second_descriptor"].length);
+    
+                document.write("<h1>"+opening_phrase + death["death_method"]+ " " + death["connector"] + " " + death["second_descriptor"][pp_index]+"</h1>");
+            </script>
+        </container>
 	</body>
 
 </html>
